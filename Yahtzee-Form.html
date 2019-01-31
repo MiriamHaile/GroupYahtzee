@@ -3,6 +3,27 @@
     <head>
         <title>Task 2 Yahtzee Form</title>
         <meta charset="UTF-8">
+
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+              padding: 10px;
+            }
+            .light {
+                background-color:#ffffff;
+            }
+            .dark {
+                background-color: #ebebeb;
+            }
+            .darker {
+                background-color: #aaacaf;
+            }
+            #summary {
+                background-color: #666666;
+                font-weight: 900; 
+            }
+        </style>
     </head>
 
     <body>
@@ -17,9 +38,16 @@
         <div>
             <h1>YAHTZEE!</h1>
         </div>
-            <table style="width:50%">
-                <tr>
-                    <th>Yahtzee</th>
+            <table style="width:100%">
+                <col>
+                    <col class="light" />
+                    <col class="dark" />
+                    <col class="light" />
+                    <col class="dark" />
+                    <col class="light" />
+                </col>
+                <tr class="darker">
+                    <th id="summary">Yahtzee</th>
                     <th>Player 1</th> 
                     <th>Player 2</th>
                     <th>Player 3</th>
@@ -69,22 +97,22 @@
                         <td><form method="post" action="some_page.php"><input type="number" min=-12 max=12 step="1"><br></form></td>
 
                     </tr>
-                    <tr>
-                        <td>TOTAL SCORE</td>
+                    <tr class="darker">
+                        <td id="summary">TOTAL SCORE</td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                     </tr>
-                    <tr>
-                        <td>Bonus</td>
+                    <tr class="darker">
+                        <td id="summary">Bonus</td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                     </tr>
-                    <tr>
-                        <td>TOTAL</td>
+                    <tr class="darker">
+                        <td id="summary">TOTAL</td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
@@ -96,7 +124,7 @@
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
-                        <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
+                        <td ><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                     </tr>
                     <tr>
                         <td>4 of a kind</td>
@@ -140,8 +168,8 @@
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                     </tr>
-                    <tr>
-                        <td>TOTAL</td>
+                    <tr class="darker">
+                        <td id="summary">TOTAL</td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
                         <td><form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form></td>
