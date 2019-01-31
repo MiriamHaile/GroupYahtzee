@@ -4,32 +4,35 @@
 <head>
     <title>Yahtzee!</title>
     <meta charset="UTF-8">
-        <link href="style.css" rel="stylesheet" media="screen" type="text/css">
+    <link href="style.css" rel="stylesheet" media="screen" type="text/css">
 
 
 
 </head>
 
 <body>
-    <form method="get" action="resume.html">
+    <form id="searchfield" method="get" action="resume.html">
         <input type="text" id="page" placeholder=Search>
         <button type="submit">OK</button>
-
     </form>
     <br>
-    <div style="text-align: center">
-        <p> <span class="zoom"><a href="index.html#anchor">Home</a></span>
-           <span class="zoom"> <a href="register.html#anchor">Register</a></span>
-           <span class="zoom"> <a href="profile.html#anchor">Profile</a></span>
-           <span class="zoom"> <a href="Yahtzee-form.html#anchor">Yahtzee</a></span>
+    <div id="navigation">
+        <p>
+            <table id="navigation">
+                <td id="navigation"><a href="index.html#anchor">Home</a></td>
+                <td id="navigation"> <span class="zoom"> <a href="register.html#anchor">Register</a></span></td>
+                <td id="navigation"> <span class="zoom"> <a href="profile.html#anchor">Profile</a></span></td>
+                <td id="navigation"> <span class="zoom"> <a href="Yahtzee-form.html#anchor">Yahtzee</a></span></td>
         </p>
-
-        <h1><em>Ready for some <bold>YAHTZEE?</bold></em></h1>
-        <p>Click <em><a href="register.html">here</a></em> to register!
-        </p>
-        <p><img src="yahtzee.jpg" alt="Picture Not Available"></p>
-
+        </table>
     </div>
+
+    <h1><em>Ready for some <bold>YAHTZEE?</bold></em></h1>
+    <p>Click <em><a href="register.html">here</a></em> to register!
+    </p>
+    <p><img src="yahtzee.jpg" alt="Picture Not Available"></p>
+
+
 
 </body>
 
