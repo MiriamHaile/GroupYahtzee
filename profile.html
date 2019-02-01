@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <style>
-            body {
-            text-align: center;
-          }
-          </style>
-          
         <title>Yahtzee Profile Page</title>
         <meta charset="UTF-8">
             <link href="style.css" rel="stylesheet" media="screen" type="text/css">
 
     </head>
     
-    <body><div style="text-align: center">
-        <table>
-        <p> <span class="zoom"><a href="index.html#anchor">Home</a></span>
-        <span class="zoom"> <a href="register.html#anchor">Register</a></span>
-        <span class="zoom"> <a href="profile.html#anchor">Profile</a></span>
-        <span class="zoom"> <a href="Yahtzee-form.html#anchor">Yahtzee</a></span>
-        </p></table>
+    <body><form id="searchfield" method="get" action="resume.html">
+        <input type="text" id="page" placeholder=Search>
+        <button type="submit">OK</button>
+    </form>
+    <br>
+    <div id="navigation">
+        <table id="navigation">
+            <td id="nav"><a href="index.html#anchor">Home</a></td>
+            <td id="nav"> <a href="register.html#anchor">Register</a></td>
+            <td id="nav"> <a href="profile.html#anchor">Profile</a></td>
+            <td id="nav"> <a href="Yahtzee-form.html#anchor">Yahtzee</a></td>
+        </table>
     </div>
 
-        <h1>Create your official YaHTZEE profile here!</h1>
+
+        <h1 id="yahtzeeheadline">Create your official YaHTZEE profile here!</h1>
 
         <p>
-            <img src="yahtzee.jpg" alt="Yahtzee Picture"> 
+            <img src="profilepic.jpg" alt="Yahtzee Picture"> 
         </p>
 
         <pre>
@@ -48,7 +48,6 @@
         </form>
 
         <a href="Yahtzee-form.html">Start the game!</a>
-
         <a href="Yahtzee-form.html">Return to score sheet</a>      
                 
 

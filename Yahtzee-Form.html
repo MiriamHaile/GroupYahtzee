@@ -9,16 +9,22 @@
 </head>
 
 <body>
-    <div style="text-align: center">
-        <p > <span class="zoom"><a href="index.html#anchor">Home</a></span>
-            <span class="zoom"> <a href="register.html#anchor">Register</a></span>
-            <span class="zoom"> <a href="profile.html#anchor">Profile</a></span>
-            <span class="zoom"> <a href="Yahtzee-form.html#anchor">Yahtzee</a></span>
-        </p>
+    <form id="searchfield" method="get" action="resume.html">
+        <input type="text" id="page" placeholder=Search>
+        <button type="submit">OK</button>
+    </form>
+    <br>
+    <div id="navigation">
+        <table id="navigation">
+            <td id="nav"><a href="index.html#anchor">Home</a></td>
+            <td id="nav"> <a href="register.html#anchor">Register</a></td>
+            <td id="nav"> <a href="profile.html#anchor">Profile</a></td>
+            <td id="nav"> <a href="Yahtzee-form.html#anchor">Yahtzee</a></td>
+        </table>
     </div>
 
     <div>
-        <h1>YAHTZEE!</h1>
+        <h1 id="yahtzeeheadline">YAHTZEE!</h1>
     </div>
     <table class="gameTable" classstyle="width:100%">
         <col>
