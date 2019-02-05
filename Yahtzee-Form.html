@@ -1,306 +1,1342 @@
 <!DOCTYPE html>
 <html lang="english">
-
 <head>
     <title>Task 2 Yahtzee Form</title>
-    <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" media="screen" type="text/css">
 
+    <meta charset="UTF-8"></meta>
+
+    <link
+        href="style.css"
+        rel="stylesheet"
+        media="screen"
+        type="text/css"
+    ></link>
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    ></meta>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    ></meta>
+
+    <script
+        src="script.js"
+        defer="defer"
+    ></script>
 </head>
 
 <body>
-    <form id="searchfield" method="get" action="resume.html">
-        <input type="text" id="page" placeholder=Search>
-        <button type="submit">OK</button>
-    </form>
-    <br>
     <div id="navigation">
         <table id="navigation">
-            <td id="nav"><a href="index.html#anchor">Home</a></td>
-            <td id="nav"> <a href="register.html#anchor">Register</a></td>
-            <td id="nav"> <a href="profile.html#anchor">Profile</a></td>
-            <td id="nav"> <a href="Yahtzee-form.html#anchor">Yahtzee</a></td>
+            <td id="nav">
+                <a href="splash.html#anchor">Home</a>
+            </td>
+
+            <td id="nav">
+                <a href="register.html#anchor">Register</a>
+            </td>
+
+            <td id="nav">
+                <a href="profile.html#anchor">Profile</a>
+            </td>
+
+            <td id="nav">
+                <a href="Yahtzee-form.html#anchor">Yahtzee</a>
+            </td>
         </table>
     </div>
 
     <div>
         <h1 id="yahtzeeheadline">YAHTZEE!</h1>
     </div>
-    <table class="gameTable" classstyle="width:100%">
-        <col>
-        <col class="light" />
-        <col class="dark" />
-        <col class="light" />
-        <col class="dark" />
-        <col class="light" />
-        </col>
+
+    <table
+        class="gameTable"
+        classstyle="width:100%"
+    >
+        <col></col>
+        <col class="light"></col>
+        <col class="dark"></col>
+        <col class="light"></col>
+        <col class="dark"></col>
+        <col class="light"></col>
+
         <tr class="darker">
             <th id="summary">Yahtzee</th>
+
             <th>Player 1</th>
+
             <th>Player 2</th>
+
             <th>Player 3</th>
+
             <th>Player 4</th>
         </tr>
 
         <tr>
             <td>Aces</td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=-2 max=2 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-2 max=2 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-2 max=2 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-2 max=2 step="1"><br></form>
-            </td>
-        </tr>
-        <tr>
-            <td>Twos</td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-4 max=4 step="2"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-4 max=4 step="2"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-4 max=4 step="2"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-4 max=4 step="2"><br></form>
-            </td>
-        </tr>
-        <tr>
-            <td>Threes</td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-6 max=6 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-6 max=6 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-6 max=6 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-6 max=6 step="1"><br></form>
-            </td>
-        </tr>
-        <tr>
-            <td>Fours</td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-8 max=8 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-8 max=8 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-8 max=8 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-8 max=8 step="1"><br></form>
-            </td>
-        </tr>
-        <tr>
-            <td>Fives</td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-10 max=10 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-10 max=10 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-10 max=10 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-10 max=10 step="1"><br></form>
-            </td>
-        </tr>
-        <tr>
-            <td>Sixes</td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-12 max=12 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-12 max=12 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-12 max=12 step="1"><br></form>
-            </td>
-            <td>
-                <form method="post" action="some_page.php"><input type="number" min=-12 max=12 step="1"><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-2"
+                        max="2"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
 
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-2"
+                        max="2"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-2"
+                        max="2"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-2"
+                        max="2"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
         </tr>
+
+        <tr>
+            <td>Twos</td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-4"
+                        max="4"
+                        step="2"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-4"
+                        max="4"
+                        step="2"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-4"
+                        max="4"
+                        step="2"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-4"
+                        max="4"
+                        step="2"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Threes</td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-6"
+                        max="6"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-6"
+                        max="6"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-6"
+                        max="6"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-6"
+                        max="6"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Fours</td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-8"
+                        max="8"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-8"
+                        max="8"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-8"
+                        max="8"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-8"
+                        max="8"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Fives</td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-10"
+                        max="10"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-10"
+                        max="10"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-10"
+                        max="10"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-10"
+                        max="10"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Sixes</td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-12"
+                        max="12"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-12"
+                        max="12"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-12"
+                        max="12"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+
+            <td>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="-12"
+                        max="12"
+                        step="1"
+                    ></input>
+
+                    <br>
+                </form>
+            </td>
+        </tr>
+
         <tr class="darker">
             <td id="summary">TOTAL SCORE</td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
         </tr>
+
         <tr class="darker">
             <td id="summary">Bonus</td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
         </tr>
+
         <tr class="darker">
             <td id="summary">TOTAL</td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
         </tr>
 
         <tr>
             <td>3 of a kind</td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
         </tr>
+
         <tr>
             <td>4 of a kind</td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
         </tr>
+
         <tr>
             <td>Full House</td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
         </tr>
+
         <tr>
             <td>Small ladder</td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
         </tr>
+
         <tr>
             <td>Big ladder</td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
         </tr>
+
         <tr>
             <td>Chance</td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
         </tr>
+
         <tr>
             <td>YAHTZEE!</td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
         </tr>
+
         <tr class="darker">
             <td id="summary">TOTAL</td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
+
             <td>
-                <form method="post" action="some_page.php"><input type="number" min=1 max=100><br></form>
+                <form
+                    method="post"
+                    action="some_page.php"
+                >
+                    <input
+                        type="number"
+                        min="1"
+                        max="100"
+                    ></input>
+
+                    <br>
+                </form>
             </td>
         </tr>
     </table>
+
+    <br>
+    <br>
+
+    <div>
+        <button
+            id="startRolls"
+            type="button"
+        >Player Start</button>
+
+        <br>
+
+        <button
+            id="roll"
+            type="button"
+        >Roll</button>
+
+        <br>
+
+        <input
+            type="checkbox"
+            id="box1"
+        ></input>
+
+        Dice 1
+
+        <input
+            type="number"
+            id="value1"
+        ></input>
+
+        <br>
+
+        <input
+            type="checkbox"
+            id="box2"
+        ></input>
+
+        Dice 2
+
+        <input
+            type="number"
+            id="value2"
+        ></input>
+
+        <br>
+
+        <input
+            type="checkbox"
+            id="box3"
+        ></input>
+
+        Dice 3
+
+        <input
+            type="number"
+            id="value3"
+        ></input>
+
+        <br>
+
+        <input
+            type="checkbox"
+            id="box4"
+        ></input>
+
+        Dice 4
+
+        <input
+            type="number"
+            id="value4"
+        ></input>
+
+        <br>
+
+        <input
+            type="checkbox"
+            id="box5"
+        ></input>
+
+        Dice 5
+
+        <input
+            type="number"
+            id="value5"
+        ></input>
+
+        <br>
+
+        <button
+            id="calculate"
+            type="button"
+        >Calculate</button>
+
+        <br>
+        ones
+
+        <input
+            type="number"
+            id="ones"
+        ></input>
+
+        <br>
+        twos
+
+        <input
+            type="number"
+            id="twos"
+        ></input>
+
+        <br>
+        threes
+
+        <input
+            type="number"
+            id="threes"
+        ></input>
+
+        <br>
+        fours
+
+        <input
+            type="number"
+            id="fours"
+        ></input>
+
+        <br>
+        fives
+
+        <input
+            type="number"
+            id="fives"
+        ></input>
+
+        <br>
+        sixes
+
+        <input
+            type="number"
+            id="sixes"
+        ></input>
+
+        <br>
+        TOTAL SUM
+
+        <input
+            type="number"
+            id="sumBox"
+        ></input>
     </div>
 </body>
-
 </html>

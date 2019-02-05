@@ -1,52 +1,93 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Yahtzee!</title>
-    <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" media="screen" type="text/css">
 
+    <meta charset="UTF-8"></meta>
 
+    <link
+        href="style.css"
+        rel="stylesheet"
+        media="screen"
+        type="text/css"
+    ></link>
 </head>
 
 <body>
- 
+    <div id="navigation">
+        <table id="navigation">
+            <td id="nav">
+                <a href="splash.html#anchor">Home</a>
+            </td>
 
-<form id="searchfield" method="get" action="resume.html">
-    <input type="text" id="page" placeholder=Search>
-    <button type="submit">OK</button>
-</form>
-<br>
-<div id="navigation">
-    <table id="navigation">
-        <td id="nav"><a href="index.html#anchor">Home</a></td>
-        <td id="nav"> <a href="register.html#anchor">Register</a></td>
-        <td id="nav"> <a href="profile.html#anchor">Profile</a></td>
-        <td id="nav"> <a href="Yahtzee-form.html#anchor">Yahtzee</a></td>
-    </table>
-</div>
+            <td id="nav">
+                <a href="register.html#anchor">Register</a>
+            </td>
 
-        <br>
-        <strong>
-            <h3>Login</h3>
-        </strong>
+            <td id="nav">
+                <a href="profile.html#anchor">Profile</a>
+            </td>
 
-        <form method="get" action="Yahtzee-form.html">
-            <input type="text" id="page" placeholder="username">
-            <br>
-            <input type="password" id="page" placeholder="password">
-            <br>
-            <button type="submit" formaction="Yahtzee-form.html">Go!</button>
-        </form>
-
-        <br>
-        <strong>New user? Register <em><a href="profile.html">here</a></strong>
-
-        <br>
-        <p><img src="dice.jpg" alt="Picture Not Available"></p>
-
+            <td id="nav">
+                <a href="Yahtzee-form.html#anchor">Yahtzee</a>
+            </td>
+        </table>
     </div>
 
-</body>
+    <br>
 
+    <strong>
+        <h3>Login</h3>
+    </strong>
+
+    <form
+        method="get"
+        action="Yahtzee-form.html"
+    >
+        <input
+            type="text"
+            id="page"
+            placeholder="username"
+        ></input>
+
+        <br>
+
+        <input
+            type="password"
+            id="page"
+            placeholder="password"
+        ></input>
+
+        <br>
+
+        <button
+            type="submit"
+            formaction="Yahtzee-form.html"
+        >Go!</button>
+    </form>
+
+    <br>
+
+    <strong>
+        New user?
+
+        <br>
+
+        <a href="profile.html">
+            <button
+                id="register"
+                type="submit"
+            >REGISTER</button>
+        </a>
+    </strong>
+
+    <br>
+
+    <p class="dice">
+        <img
+            src="dice.jpg"
+            alt="Picture Not Available"
+        >
+    </p>
+</body>
 </html>

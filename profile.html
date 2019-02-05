@@ -1,58 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Yahtzee Profile Page</title>
-        <meta charset="UTF-8">
-            <link href="style.css" rel="stylesheet" media="screen" type="text/css">
+<head>
+    <title>Yahtzee Profile Page</title>
 
-    </head>
-    
-    <body><form id="searchfield" method="get" action="resume.html">
-        <input type="text" id="page" placeholder=Search>
-        <button type="submit">OK</button>
-    </form>
-    <br>
+    <meta charset="UTF-8"></meta>
+
+    <link
+        href="style.css"
+        rel="stylesheet"
+        media="screen"
+        type="text/css"
+    ></link>
+</head>
+
+<body>
     <div id="navigation">
         <table id="navigation">
-            <td id="nav"><a href="index.html#anchor">Home</a></td>
-            <td id="nav"> <a href="register.html#anchor">Register</a></td>
-            <td id="nav"> <a href="profile.html#anchor">Profile</a></td>
-            <td id="nav"> <a href="Yahtzee-form.html#anchor">Yahtzee</a></td>
+            <td id="nav">
+                <a href="splash.html#anchor">Home</a>
+            </td>
+
+            <td id="nav">
+                <a href="register.html#anchor">Register</a>
+            </td>
+
+            <td id="nav">
+                <a href="profile.html#anchor">Profile</a>
+            </td>
+
+            <td id="nav">
+                <a href="Yahtzee-form.html#anchor">Yahtzee</a>
+            </td>
         </table>
     </div>
 
+    <h1 id="yahtzeeheadline">
+        Create your official YaHTZEE profile here!
+    </h1>
 
-        <h1 id="yahtzeeheadline">Create your official YaHTZEE profile here!</h1>
+    <p>
+        <img
+            src="profilepic.jpg"
+            alt="Yahtzee Picture"
+        >
+    </p>
 
-        <p>
-            <img src="profilepic.jpg" alt="Yahtzee Picture"> 
-        </p>
+    <pre>
+        <form
+            method="post"
+            action="”some_page.php”"
+        >
+            Name:
 
-        <pre>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name here"
+            ></input>
 
-        <form method="post" action=”some_page.php”>
-                Name:
-                <input type="text" id="name" placeholder="Enter your name here">
-                Email address:
-                <input type="email" id="email" placeholder="Enter your email address here">
-                Age:
-                <select id=”age">
-                <option value=”age_group1”>0-30</option>
-                <option value=”age_group2”>30-60</option>
-                <option value=”age_group3”>60-</option>
-                </select>
-                Score:
-                <input type="number" min="5" max="1575" id="score" placeholder="Enter your score here">
-                Country:
-                <input type="text" id="country" placeholder="Enter your country here">
+            Email address:
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address here"
+            ></input>
+
+            Age:
+
+            <select id="”age">
+                <option value="”age_group1”">0-30</option>
+
+                <option value="”age_group2”">30-60</option>
+
+                <option value="”age_group3”">60-</option>
+            </select>
+
+            Score:
+
+            <input
+                type="number"
+                min="5"
+                max="1575"
+                id="score"
+                placeholder="Enter your score here"
+            ></input>
+
+            Country:
+
+            <input
+                type="text"
+                id="country"
+                placeholder="Enter your country here"
+            ></input>
         </form>
 
         <a href="Yahtzee-form.html">Start the game!</a>
-        <a href="Yahtzee-form.html">Return to score sheet</a>      
-                
 
-        </pre>
-
-    </body>
-
+        <a href="Yahtzee-form.html">Return to score sheet</a>
+    </pre>
+</body>
 </html>
