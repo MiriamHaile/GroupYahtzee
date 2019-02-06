@@ -6,10 +6,28 @@ function getRandomInt(min, max) {
 let roll = document.getElementById("roll");
 let calculate = document.getElementById("calculate");
 let startRolls = document.getElementById("startRolls");
+let radiobox1 = document.getElementById("radio1");
+let radiobox2 = document.getElementById("radio2");
+let radiobox3 = document.getElementById("radio3");
 
 calculate.addEventListener("click", calculateScore)
 startRolls.addEventListener("click", startTurn);
 roll.addEventListener("click", updatevalue);
+radiobox1.addEventListener("change", function(){document.getElementById("oneScore1").value = sumOnes;})
+radiobox2.addEventListener("change", writeScore2);
+radiobox3.addEventListener("change", function(){document.getElementById("threeScore1").value = sumThrees;})
+
+
+/*function writeScore1(){
+    document.getElementById("oneScore").innerHTML = parseInt(sumOnes);
+    /*document.getElementById("myBtn").addEventListener("click", function(){
+        document.getElementById("demo").innerHTML = "Hello World";
+}*/
+
+function writeScore2(){
+    document.getElementById("twoScore").value = sumTwos;
+}
+
 
 function startTurn() {
     document.getElementById("value1").value = 0;
