@@ -46,6 +46,13 @@
         transform: translateX(10px);
     }
 }
+#rollsAndPoints {
+    left: 150px;;
+    top: 200px;
+    position: absolute;
+    text-align: right;
+
+}
 
 #register {
     display: inline-block;
