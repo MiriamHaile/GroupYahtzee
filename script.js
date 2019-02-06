@@ -16,6 +16,8 @@ let radiobox6 = document.getElementById("radio6");
 calculate.addEventListener("click", calculateScore)
 startRolls.addEventListener("click", startTurn);
 roll.addEventListener("click", updatevalue);
+
+
 radiobox1.addEventListener("change", function(){document.getElementById("oneScore1").value = sumOnes;})
 radiobox2.addEventListener("change", function(){document.getElementById("twoScore1").value = sumTwos;});
 radiobox3.addEventListener("change", function(){document.getElementById("threeScore1").value = sumThrees;})
@@ -26,7 +28,36 @@ radiobox6.addEventListener("change", function(){document.getElementById("sixScor
 /*function writeScore2(){
     document.getElementById("twoScore").value = sumTwos;
 }*/
-
+document.getElementById("startRolls").addEventListener("click", () => {
+    document.getElementById("box1").checked = false;
+});
+document.getElementById("startRolls").addEventListener("click", () => {
+    document.getElementById("box2").checked = false;
+});
+document.getElementById("startRolls").addEventListener("click", () => {
+    document.getElementById("box3").checked = false;
+});
+document.getElementById("startRolls").addEventListener("click", () => {
+    document.getElementById("box4").checked = false;
+});
+document.getElementById("startRolls").addEventListener("click", () => {
+    document.getElementById("box5").checked = false;
+});
+document.getElementById("startRolls").addEventListener("click", () => {
+    document.getElementById("radio1").checked = false;
+});
+document.getElementById("startRolls").addEventListener("click", () => {
+    document.getElementById("radio2").checked = false;
+});
+document.getElementById("startRolls").addEventListener("click", () => {
+    document.getElementById("radio3").checked = false;
+});
+document.getElementById("startRolls").addEventListener("click", () => {
+    document.getElementById("radio4").checked = false;
+});
+document.getElementById("startRolls").addEventListener("click", () => {
+    document.getElementById("radio5").checked = false;
+});
 
 function startTurn() {
     document.getElementById("value1").value = 0;
