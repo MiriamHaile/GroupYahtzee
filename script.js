@@ -72,54 +72,54 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("value4").value = 0;
         document.getElementById("value5").value = 0;
         count = 0;
-        
-        player1button.addEventListener("click", function() {
-            alert("Player 1's turn");
-            radiobox1.addEventListener("change", function(){document.getElementById("oneScore1").value = sumOnes;})
-            radiobox2.addEventListener("change", function(){document.getElementById("oneScore2").value = sumTwos;});
-            radiobox3.addEventListener("change", function(){document.getElementById("oneScore3").value = sumThrees;})
-            radiobox4.addEventListener("change", function(){document.getElementById("oneScore4").value = sumFours;})
-            radiobox5.addEventListener("change", function(){document.getElementById("oneScore5").value = sumFives;})
-            radiobox6.addEventListener("change", function(){document.getElementById("oneScore6").value = sumSixes;})
-            // Check what radio button that's selectes
-            // Get the coe´rrespondig value
-            // Update the corresponding score for player 1
-        });
-        
-            
-        
-    
-        player2button.addEventListener("click", function() {
-            alert("Player 2's turn");
-            radiobox1.addEventListener("change", function(){document.getElementById("twoScore1").value = sumOnes;})
-            radiobox2.addEventListener("change", function(){document.getElementById("twoScore2").value = sumTwos;});
-            radiobox3.addEventListener("change", function(){document.getElementById("twoScore3").value = sumThrees;})
-            radiobox4.addEventListener("change", function(){document.getElementById("twoScore4").value = sumFours;})
-            radiobox5.addEventListener("change", function(){document.getElementById("twoScore5").value = sumFives;})
-            radiobox6.addEventListener("change", function(){document.getElementById("twoScore6").value = sumSixes;})
-        
-        });
-        player3button.addEventListener("click", function() {
-            alert("Player 3's turn");
-        
-            radiobox1.addEventListener("change", function(){document.getElementById("threeScore1").value = sumOnes;})
-            radiobox2.addEventListener("change", function(){document.getElementById("threeScore2").value = sumTwos;});
-            radiobox3.addEventListener("change", function(){document.getElementById("threeScore3").value = sumThrees;})
-            radiobox4.addEventListener("change", function(){document.getElementById("threeScore4").value = sumFours;})
-            radiobox5.addEventListener("change", function(){document.getElementById("threeScore5").value = sumFives;})
-            radiobox6.addEventListener("change", function(){document.getElementById("threeScore6").value = sumSixes;})
-    });
-        player4button.addEventListener("click", function() {
-            alert("Player 4's turn");
-            radiobox1.addEventListener("change", function(){document.getElementById("fourScore1").value = sumOnes;})
-            radiobox2.addEventListener("change", function(){document.getElementById("fourScore2").value = sumTwos;});
-            radiobox3.addEventListener("change", function(){document.getElementById("fourScore3").value = sumThrees;})
-            radiobox4.addEventListener("change", function(){document.getElementById("fourScore4").value = sumFours;})
-            radiobox5.addEventListener("change", function(){document.getElementById("fourScore5").value = sumFives;})
-            radiobox6.addEventListener("change", function(){document.getElementById("fourScore6").value = sumSixes;})
-        });
     }
+    
+                player1button.addEventListener("click", function () {
+                alert("Player 1's turn");
+                radiobox1.addEventListener("change", function () { document.getElementById("oneScore1").value = sumOnes; })
+                radiobox2.addEventListener("change", function () { document.getElementById("oneScore2").value = sumTwos; });
+                radiobox3.addEventListener("change", function () { document.getElementById("oneScore3").value = sumThrees; })
+                radiobox4.addEventListener("change", function () { document.getElementById("oneScore4").value = sumFours; })
+                radiobox5.addEventListener("change", function () { document.getElementById("oneScore5").value = sumFives; })
+                radiobox6.addEventListener("change", function () { document.getElementById("oneScore6").value = sumSixes; })
+                // Check what radio button that's selectes
+                // Get the coe´rrespondig value
+                // Update the corresponding score for player 1
+            });
+                player2button.addEventListener("click", function () {
+                alert("Player 2's turn");
+                radiobox1.addEventListener("change", function () { document.getElementById("twoScore1").value = sumOnes; })
+                radiobox2.addEventListener("change", function () { document.getElementById("twoScore2").value = sumTwos; });
+                radiobox3.addEventListener("change", function () { document.getElementById("twoScore3").value = sumThrees; })
+                radiobox4.addEventListener("change", function () { document.getElementById("twoScore4").value = sumFours; })
+                radiobox5.addEventListener("change", function () { document.getElementById("twoScore5").value = sumFives; })
+                radiobox6.addEventListener("change", function () { document.getElementById("twoScore6").value = sumSixes; })
 
+            });
+        
+                player3button.addEventListener("click", function () {
+                alert("Player 3's turn");
+                radiobox1.addEventListener("change", function () { document.getElementById("threeScore1").value = sumOnes; })
+                radiobox2.addEventListener("change", function () { document.getElementById("threeScore2").value = sumTwos; });
+                radiobox3.addEventListener("change", function () { document.getElementById("threeScore3").value = sumThrees; })
+                radiobox4.addEventListener("change", function () { document.getElementById("threeScore4").value = sumFours; })
+                radiobox5.addEventListener("change", function () { document.getElementById("threeScore5").value = sumFives; })
+                radiobox6.addEventListener("change", function () { document.getElementById("threeScore6").value = sumSixes; })
+            });
+
+                player4button.addEventListener("click", function () {
+                alert("Player 4's turn");
+                radiobox1.addEventListener("change", function () { document.getElementById("fourScore1").value = sumOnes; })
+                radiobox2.addEventListener("change", function () { document.getElementById("fourScore2").value = sumTwos; });
+                radiobox3.addEventListener("change", function () { document.getElementById("fourScore3").value = sumThrees; })
+                radiobox4.addEventListener("change", function () { document.getElementById("fourScore4").value = sumFours; })
+                radiobox5.addEventListener("change", function () { document.getElementById("fourScore5").value = sumFives; })
+                radiobox6.addEventListener("change", function () { document.getElementById("fourScore6").value = sumSixes; })
+            });
+        
+
+    
+      
 
     function updatevalue() {
         if (++count <= 3) {
