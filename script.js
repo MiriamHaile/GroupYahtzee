@@ -9,24 +9,23 @@ let startRolls = document.getElementById("startRolls");
 let radiobox1 = document.getElementById("radio1");
 let radiobox2 = document.getElementById("radio2");
 let radiobox3 = document.getElementById("radio3");
+let radiobox4 = document.getElementById("radio4");
+let radiobox5 = document.getElementById("radio5");
+let radiobox6 = document.getElementById("radio6"); 
 
 calculate.addEventListener("click", calculateScore)
 startRolls.addEventListener("click", startTurn);
 roll.addEventListener("click", updatevalue);
 radiobox1.addEventListener("change", function(){document.getElementById("oneScore1").value = sumOnes;})
-radiobox2.addEventListener("change", writeScore2);
+radiobox2.addEventListener("change", function(){document.getElementById("twoScore1").value = sumTwos;});
 radiobox3.addEventListener("change", function(){document.getElementById("threeScore1").value = sumThrees;})
+radiobox4.addEventListener("change", function(){document.getElementById("fourScore1").value = sumFours;})
+radiobox5.addEventListener("change", function(){document.getElementById("fiveScore1").value = sumFives;})
+radiobox6.addEventListener("change", function(){document.getElementById("sixScore1").value = sumSixes;})
 
-
-/*function writeScore1(){
-    document.getElementById("oneScore").innerHTML = parseInt(sumOnes);
-    /*document.getElementById("myBtn").addEventListener("click", function(){
-        document.getElementById("demo").innerHTML = "Hello World";
-}*/
-
-function writeScore2(){
+/*function writeScore2(){
     document.getElementById("twoScore").value = sumTwos;
-}
+}*/
 
 
 function startTurn() {
