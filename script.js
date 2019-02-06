@@ -1,4 +1,6 @@
+
 document.addEventListener("DOMContentLoaded", function() {
+
 
     function getRandomInt(min, max) { 
         return Math.floor(Math.random() * (max - min)) + min;
@@ -23,7 +25,36 @@ document.addEventListener("DOMContentLoaded", function() {
     startRolls.addEventListener("click", startTurn);
     roll.addEventListener("click", updatevalue);
 
-    
+    document.getElementById("startRolls").addEventListener("click", () => {
+        document.getElementById("box1").checked = false;
+    });
+    document.getElementById("startRolls").addEventListener("click", () => {
+        document.getElementById("box2").checked = false;
+    });
+    document.getElementById("startRolls").addEventListener("click", () => {
+        document.getElementById("box3").checked = false;
+    });
+    document.getElementById("startRolls").addEventListener("click", () => {
+        document.getElementById("box4").checked = false;
+    });
+    document.getElementById("startRolls").addEventListener("click", () => {
+        document.getElementById("box5").checked = false;
+    });
+    document.getElementById("startRolls").addEventListener("click", () => {
+        document.getElementById("radio1").checked = false;
+    });
+    document.getElementById("startRolls").addEventListener("click", () => {
+        document.getElementById("radio2").checked = false;
+    });
+    document.getElementById("startRolls").addEventListener("click", () => {
+        document.getElementById("radio3").checked = false;
+    });
+    document.getElementById("startRolls").addEventListener("click", () => {
+        document.getElementById("radio4").checked = false;
+    });
+    document.getElementById("startRolls").addEventListener("click", () => {
+        document.getElementById("radio5").checked = false;
+    });
     
 
     
